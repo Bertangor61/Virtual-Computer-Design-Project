@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Opening</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body 
+        style="background-image: url(assets/images/openbackgroundimg.jpg); 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        opacity: 0.6;"> 
+            <div class="card">
+                <div class="row">
+                    <div style="display: flex;justify-content: center;align-items: center;">
+                        <img src="assets/images/profile.pic.jpeg" class="rounded-circle mb-4" width="200" height="200" alt="">
+                    </div>
+                    <form action="" method="post">
+                        <div class="form-group">
+                                <h2 style="display: flex;justify-content: center;align-items: center;"><label for="password">Password</label></h2>
+                                <input type="password" id="password" class="form-control" placeholder="Write password" required >
+                                <a onclick="login()"><input type="button" class="btn btn-info form-control" value="Login" ></a>
+                        </div>
+                    </form>
+                </div>
+        </div>
+
+
+        <script>
+            function login(){
+                var sifre = '12345';
+                var password = document.getElementById('password').value;
+
+                if(password === sifre){
+                    window.location.href="windows.html";
+                }
+                else{
+                    alert('Hatalı Giriş Tekrar Deneyiniz.');
+                }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>  
+    </body>
+</html>
